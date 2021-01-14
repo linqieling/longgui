@@ -1,0 +1,117 @@
+{extend name="../admin/common/base" /}
+
+{block name="body"}
+<form class="layui-form" action="">
+    <div class="layui-form-item">
+        <label class="layui-form-label">分组名称</label>
+        <div class="layui-input-block">
+            <input class="layui-input" type="text" id="group_name" name="name" value="{$group_info.name}" placeholder="请输入角色名称" />
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">公众号数量</label>
+        <div class="layui-input-block">
+            <input class="layui-input" type="number" id="group_mpnum" name="mpnum" value="{$group_info.mpnum}" placeholder="请输入公众号数量" />
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">小程序数量</label>
+        <div class="layui-input-block">
+            <input class="layui-input" type="number" id="group_xcxnum" name="xcxnum" value="{$group_info.xcxnum}" placeholder="请输入小程序数量" />
+        </div>
+    </div>
+    
+    {if $group_info['is_sys'] == 0}
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-block">
+
+            <input type="radio" name="status" value="1" title="正常" <?php if($group_info['status']==1){?> checked<?php }?> >
+            <input type="radio" name="status" value="0" title="禁用" <?php if($group_info['status']==0){?> checked<?php }?>>
+        </div>
+    </div>
+    {/if}
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">选择权限</label>
+        <div class="layui-input-block">
+            <div id="LAY-auth-tree-index"></div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <input type="hidden" name="id" value="{$id}">
+            <input type="hidden" name="authids_str" id="authids_str" value="">
+            <button class="layui-btn" lay-submit lay-filter="ADM">提交</button>
+            <button class="layui-btn layui-btn-primary" type="reset">重置</button>
+        </div>
+    </div>
+</form>
+
+</body>
+<script type="text/javascript">
+    layui.config({
+        base: '/public/static/layui/lay/extends/',
+    }).extend({
+        authtree: 'authtree',
+    });
+    layui.use(['jquery', 'authtree'], function(){
+        var $ = layui.jquery;
+        var authtree = layui.authtree;
+        $.ajax({
+            url: '/admin/group/auth_tree.html?id={$id}',
+            dataType: 'json',
+            success: function(data){
+                // 渲染时传入渲染目标ID，树形结构数据（具体结构看样例，checked表示默认选中），以及input表单的名字
+                authtree.render('#LAY-auth-tree-index', data.data.trees, 'authids');
+            }
+        })
+    });
+</script>
+
+<script>
+    layui.use('form', function(){
+        var form = layui.form;
+        form.on('submit(ADM)', function(data){
+            //var checkID = [];//定义一个空数组
+            var authids_str = '';//定义一个空数组
+            var i_str ='';
+            $("input[name='authids']:checked").each(function(i){ //把所有被选中的复选框的值存入数组
+                //checkID[i] =$(this).val();
+                authids_str +=i_str+$(this).val();
+                if(i_str==''){
+                    i_str =',';
+                }
+
+            });
+            //alert(authids_str);
+            $('#authids_str').val(authids_str);
+            var group_name =$('#group_name').val();
+            var group_mpnum =$('#group_mpnum').val();
+            var group_xcxnum =$('#group_xcxnum').val();
+            var status =$('input[name="status"]:checked').val();
+            $.post('',{
+                id:{$id},
+                name:group_name,
+                mpnum:group_mpnum,
+                xcxnum:group_xcxnum,
+                authids:authids_str,
+                status:status,
+
+            },function (res) {
+                if(res.status=='0'){
+                    layer.msg(res.msg);
+                }
+                if(res.status=='1'){
+                    layer.msg(res.msg,{time:1000},function () {
+                        location.href="{:url('group/index')}";
+                    });
+                }
+            })
+            return false;
+        });
+    });
+</script>
+{/block}

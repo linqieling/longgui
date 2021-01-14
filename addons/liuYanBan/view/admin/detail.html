@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {js href='__STATIC__/jquery/jquery-1.11.0.min.js' /}
+    {js href='__STATIC__/layui/layui.js' /}
+    {CSS href="__STATIC__/layui/css/layui.css" /}
+</head>
+
+<body>
+
+    <div class="layui-form" style="margin: 20px 20px 70px 20px;">
+        
+        用户
+        <hr>
+        <blockquote class="layui-elem-quote" style="margin-bottom: 20px;">
+            <img src="{$data.avatar}" width="48" height="48" style="border-radius: 100%;" alt="头像" />
+            <span style="margin-left: 10px;">{$data.nickname}</span>
+        </blockquote>
+
+        留言时间
+        <hr>
+        <blockquote class="layui-elem-quote" style="margin-bottom: 20px;">{:date('Y-m-d H:i', $data.dateline)}</blockquote>
+
+        姓名
+        <hr>
+        <blockquote class="layui-elem-quote" style="margin-bottom: 20px;">{$data.name}</blockquote>
+        
+        手机
+        <hr>
+        <blockquote class="layui-elem-quote" style="margin-bottom: 20px;">{$data.phone}</blockquote>
+        
+        标题
+        <hr>
+        <blockquote class="layui-elem-quote" style="margin-bottom: 20px;">{$data.title}</blockquote>
+
+        内容
+        <hr>
+        <blockquote class="layui-elem-quote" style="margin-bottom: 20px;">{$data.content}</blockquote>
+
+        {if count($list) > 0}
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend>回复记录</legend>
+        </fieldset>
+        <div style="padding: 20px; background-color: #EEE;">
+            {volist name="list" id="vo"}
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    <b>{$vo.tname}</b>
+                    <span style="margin-left: 20px;">{:date('Y-m-d H:i', $vo.dateline)}</span>
+                    <i class="layui-icon layui-icon-close" style="font-size: 16px; font-weight: bold; float: right; cursor: pointer;" onclick="delReplie({$vo.id}, {$vo.mb_id})"></i>
+                </div>
+                <div class="layui-card-body">{$vo.content}</div>
+            </div>
+            {/volist}
+        </div>
+        {/if}
+            
+    </div>
+
+    <div class="bottom-box">
+        <button type="button" class="layui-btn layui-btn-normal" onclick="sendReplie({$data.mb_id})">回复</button>
+    </div>
+
+</body>
+
+<style type="text/css">
+    .bottom-box {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 39px;
+        border-top: 1px solid #e7e7eb;
+        padding: 10px 24px;
+        background-color: #FEFEFE;
+    }
+</style>
+
+<script>
+    var layer;
+    layui.use('layer',function () {
+        layer = layui.layer;
+    })
+    function delReplie(id, mb_id) {
+        layer.confirm('确定要删除该回复吗?', {
+            title:'系统提示'
+            ,icon: 3
+            ,shade: 0.3
+            ,closeBtn: 0
+        }, function(index){
+            layer.close(index);
+            $.post("{:addonUrl('replieDel')}", {
+                'id': id,
+                'mb_id': mb_id
+            }, function (res) {
+                if(res.status==1){
+                    layer.open({
+                        title: '系统提示'
+                        ,icon: 1
+                        ,closeBtn: 0
+                        ,content: res.msg?res.msg:'操作成功'
+                        ,yes: function(){
+                            window.location.reload();
+                        }
+                    });
+                }else{
+                    layer.open({
+                        title: '系统提示'
+                        ,icon: 2
+                        ,closeBtn: 0
+                        ,content: res.msg?res.msg:'操作成功'
+                    });
+                }
+            }).error(function (res) {
+                layer.open({
+                    title: '系统提示'
+                    ,icon: 2
+                    ,closeBtn: 0
+                    ,content: '服务出错'
+                });
+            })
+        });
+    }
+
+    function sendReplie(mb_id){
+        layer.prompt({
+            formType: 2,
+            title: '请输入回复内容',
+            area: ['400px', '120px'] //自定义文本域宽高
+        }, function(value, index, elem){
+            if(value){
+                layer.close(index);
+                var load = layer.load(1);
+                $.post("{:addonUrl('msgReplie')}", {
+                    id: mb_id,
+                    content: value
+                }, function (res) {
+                    layer.close(load);
+                    if(res.status==1){
+                        layer.open({
+                            title: '系统提示'
+                            ,icon: 1
+                            ,closeBtn: 0
+                            ,content: res.msg?res.msg:'操作成功'
+                            ,yes: function(){
+                                window.location.reload();
+                            }
+                        });
+                    }else{
+                        layer.open({
+                            title: '系统提示'
+                            ,icon: 2
+                            ,closeBtn: 0
+                            ,content: res.msg?res.msg:'操作失败'
+                        });
+                    }
+                }).error(function (res) {
+                    layer.close(load);
+                    layer.open({
+                        title: '系统提示'
+                        ,icon: 2
+                        ,closeBtn: 0
+                        ,content: '服务出错'
+                    });
+                })
+            }else{
+                layer.close(index);
+                layer.msg('请输入回复内容');
+            }
+        });
+    }
+</script>

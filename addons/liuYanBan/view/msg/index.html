@@ -1,0 +1,87 @@
+{extend name="common:base" /}
+{block name="body"}
+	<!-- 这里还是一个标准的BUI页面 -->
+<div class="bui-page bui-box-vertical">
+
+    <main class="container-x">
+        <!-- 中间内容 -->
+        <div class="mine-box">
+            <div class="mine-img">
+                <img src="{if $userinfo.headimgurl}{$userinfo.headimgurl}{else /}__ADDONSTATIC__/images/default-avatar.png{/if}" alt="头像" />
+            </div>
+            <h2>{if $userinfo.nickname}{$userinfo.nickname}{else /}未授权{/if}</h2>
+        </div>
+
+        <div class="list-box">
+            <ul>
+                <li id="inputs">
+                    <p>我要留言</p>
+                    <img src="__ADDONSTATIC__/images/icon-post.png" />
+                </li>
+                <li id="lists">
+                    <p>留言记录</p>
+                    <img src="__ADDONSTATIC__/images/icon-list.png" />
+                </li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+
+<script>
+    bui.ready(function() {
+      	// 所有控件及方法需要在这里执行
+        $("#inputs").on("click",function(){
+            bui.load({ url: "{:addonUrl('inputs')}" });
+        });
+        $("#lists").on("click",function(){
+            bui.load({ url: "{:addonUrl('lists')}" });
+        });
+    })
+</script>
+
+<style type="text/css">
+    .mine-box {
+        margin: .8rem .6rem;
+    }
+    .mine-img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 auto;
+    }
+    .mine-img img {
+        border-radius: 100%;
+    }
+    .mine-box h2 {
+        margin-top: .3rem;
+        color: #434343;
+        text-align: center;
+    }
+
+    .list-box {
+
+    }
+    .list-box li {
+        display: block;
+        border-radius: .06rem;
+        padding: .4rem;
+        margin-bottom: .3rem;
+        background: #fff;
+        border: 1px solid #ededed;
+        position: relative;
+        height: 1.8rem;
+    }
+    .list-box li p {
+        font-size: .38rem;
+        line-height: 1rem;
+        padding-left: 0.2rem;
+    }
+    .list-box li>img {
+        position: absolute;
+        right: .2rem;
+        bottom: 0;
+        width: 2rem;
+        opacity: 0.8;
+    }
+</style>
+{/block}

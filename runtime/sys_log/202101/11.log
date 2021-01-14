@@ -1,0 +1,886 @@
+---------------------------------------------------------------
+[2021-01-11T16:27:09+08:00] 127.0.0.1 GET test.rhaphp.com/favicon.ico
+[运行时间：1.201069s] [吞吐率：0.83req/s] [内存消耗：882.85kb] [文件加载：64]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2021-01-11T16:27:11+08:00] 127.0.0.1 GET test.rhaphp.com/
+[运行时间：2.479142s] [吞吐率：0.40req/s] [内存消耗：1,788.50kb] [文件加载：87]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__gads=ID=fccd2c01b2f0753b-228e851a88c5002b:T=1609725613:RT=1609725613:S=ALNI_MYsu7OhyegO_qvYXllCgzwm7ek8Zw; think_admin=think%3A%7B%22id%22%3A%221%22%2C%22admin_name%22%3A%22admin%22%2C%22password%22%3A%224e09a07b26fbbf6160deeacbb0bfbde5%22%2C%22status%22%3A%221%22%2C%22ip%22%3A%22127.0.0.1%22%2C%22last_time%22%3A%221609833091%22%2C%22rand_str%22%3A%22zcuMwC%22%2C%22admin_id%22%3A%221%22%7D; Hm_lvt_c3a330b88fce5e521bc5aaa2eda578c4=1609900439,1609988678,1610076702,1610077162',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[F:\phpstudy\WWW\rhaphp\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+[2021-01-11T16:27:11+08:00] 127.0.0.1 GET test.rhaphp.com/favicon.ico
+[运行时间：0.011000s] [吞吐率：90.91req/s] [内存消耗：310.48kb] [文件加载：64]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2021-01-11T16:27:16+08:00] 127.0.0.1 GET test.rhaphp.com/
+[运行时间：1.048060s] [吞吐率：0.95req/s] [内存消耗：527.05kb] [文件加载：87]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__gads=ID=fccd2c01b2f0753b-228e851a88c5002b:T=1609725613:RT=1609725613:S=ALNI_MYsu7OhyegO_qvYXllCgzwm7ek8Zw; think_admin=think%3A%7B%22id%22%3A%221%22%2C%22admin_name%22%3A%22admin%22%2C%22password%22%3A%224e09a07b26fbbf6160deeacbb0bfbde5%22%2C%22status%22%3A%221%22%2C%22ip%22%3A%22127.0.0.1%22%2C%22last_time%22%3A%221609833091%22%2C%22rand_str%22%3A%22zcuMwC%22%2C%22admin_id%22%3A%221%22%7D; Hm_lvt_c3a330b88fce5e521bc5aaa2eda578c4=1609900439,1609988678,1610076702,1610077162; PHPSESSID=i9pnmvvuqs3qhr3hqfdhf55594',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[F:\phpstudy\WWW\rhaphp\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+[2021-01-11T16:27:16+08:00] 127.0.0.1 GET test.rhaphp.com/favicon.ico
+[运行时间：0.013000s] [吞吐率：76.92req/s] [内存消耗：310.48kb] [文件加载：64]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2021-01-11T16:27:22+08:00] 127.0.0.1 GET test.rhaphp.com/
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：444.88kb] [文件加载：83]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:27:23+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/index.html
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：441.53kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/admin/system\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2021-01-11T16:27:23+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html
+[运行时间：0.218012s] [吞吐率：4.59req/s] [内存消耗：439.13kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:27:24+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/index.html
+[运行时间：0.014001s] [吞吐率：71.42req/s] [内存消耗：440.76kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/admin/system\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2021-01-11T16:27:25+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html
+[运行时间：0.074004s] [吞吐率：13.51req/s] [内存消耗：438.72kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:27:25+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/index.html
+[运行时间：0.015001s] [吞吐率：66.66req/s] [内存消耗：440.76kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/admin/system\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2021-01-11T16:27:25+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：438.72kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:27:25+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/index.html
+[运行时间：0.014000s] [吞吐率：71.43req/s] [内存消耗：440.76kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/admin/system\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2021-01-11T16:27:25+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html
+[运行时间：0.020001s] [吞吐率：50.00req/s] [内存消耗：438.72kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:27:25+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/index.html
+[运行时间：0.017001s] [吞吐率：58.82req/s] [内存消耗：440.76kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/admin/system\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2021-01-11T16:27:25+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html
+[运行时间：0.020001s] [吞吐率：50.00req/s] [内存消耗：438.72kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:27:29+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/index.html
+[运行时间：0.025002s] [吞吐率：40.00req/s] [内存消耗：440.76kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/admin/system\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2021-01-11T16:27:29+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html
+[运行时间：0.014001s] [吞吐率：71.42req/s] [内存消耗：438.72kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2h7cphfa22bif4n634aqkatqf0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:28:52+08:00] 127.0.0.1 GET test.rhaphp.com/favicon.ico
+[运行时间：0.005000s] [吞吐率：200.00req/s] [内存消耗：310.48kb] [文件加载：64]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2021-01-11T16:28:52+08:00] 127.0.0.1 GET test.rhaphp.com/
+[运行时间：0.014001s] [吞吐率：71.42req/s] [内存消耗：443.50kb] [文件加载：83]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:28:52+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/index.html
+[运行时间：0.008000s] [吞吐率：125.00req/s] [内存消耗：440.23kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/admin/system\login.html [ array (
+) ]
+---------------------------------------------------------------
+[2021-01-11T16:28:52+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html
+[运行时间：0.013001s] [吞吐率：76.92req/s] [内存消耗：438.04kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2021-01-11T16:28:57+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html?0.9778448082134603
+[运行时间：0.019001s] [吞吐率：52.63req/s] [内存消耗：439.02kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_9778448082134603' => '',
+)
+---------------------------------------------------------------
+[2021-01-11T16:29:00+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html?0.11389689703240147
+[运行时间：0.009000s] [吞吐率：111.11req/s] [内存消耗：439.02kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_11389689703240147' => '',
+)
+---------------------------------------------------------------
+[2021-01-11T16:29:01+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html?0.19159709581674833
+[运行时间：0.008000s] [吞吐率：125.00req/s] [内存消耗：439.02kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_19159709581674833' => '',
+)
+---------------------------------------------------------------
+[2021-01-11T16:29:05+08:00] 127.0.0.1 POST test.rhaphp.com/admin/login/index.html
+[运行时间：0.021001s] [吞吐率：47.62req/s] [内存消耗：441.88kb] [文件加载：79]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test.rhaphp.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin',
+  'password' => '123456',
+  'verify' => 'xete',
+)
+---------------------------------------------------------------
+[2021-01-11T16:29:05+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html?0.5488849324303247
+[运行时间：0.018001s] [吞吐率：55.55req/s] [内存消耗：439.02kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_5488849324303247' => '',
+)
+---------------------------------------------------------------
+[2021-01-11T16:29:06+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html?0.322516225587804
+[运行时间：0.010001s] [吞吐率：99.99req/s] [内存消耗：439.02kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_322516225587804' => '',
+)
+---------------------------------------------------------------
+[2021-01-11T16:29:08+08:00] 127.0.0.1 GET test.rhaphp.com/admin/login/verify.html?0.9315561460084094
+[运行时间：0.007001s] [吞吐率：142.84req/s] [内存消耗：439.02kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_9315561460084094' => '',
+)
+---------------------------------------------------------------
+[2021-01-11T16:29:12+08:00] 127.0.0.1 POST test.rhaphp.com/admin/login/index.html
+[运行时间：0.069004s] [吞吐率：14.49req/s] [内存消耗：585.74kb] [文件加载：85]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test.rhaphp.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin',
+  'password' => '123456',
+  'verify' => 'efavr',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=rhaphp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_admin` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_admin` WHERE  `admin_name` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `hd_admin`  SET `ip` = '127.0.0.1' , `last_time` = 1610353752  WHERE  `admin_name` = 'admin' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2021-01-11T16:29:15+08:00] 127.0.0.1 GET test.rhaphp.com/mp/mp/index.html
+[运行时间：1.233071s] [吞吐率：0.81req/s] [内存消耗：911.79kb] [文件加载：102]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6; think_admin=think%3A%7B%22id%22%3A%221%22%2C%22admin_name%22%3A%22admin%22%2C%22password%22%3A%224e09a07b26fbbf6160deeacbb0bfbde5%22%2C%22status%22%3A%221%22%2C%22ip%22%3A%22127.0.0.1%22%2C%22last_time%22%3A%221610098480%22%2C%22rand_str%22%3A%22zcuMwC%22%2C%22admin_id%22%3A%221%22%2C%22groupid%22%3A%221%22%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/mp/mp\index.html [ array (
+  0 => 'mpByMenu',
+  1 => 't_menu',
+  2 => 'topNode',
+  3 => 'menu_title',
+  4 => 'node',
+  5 => 'menu',
+  6 => 'controller_name',
+  7 => 'action_name',
+  8 => 'admin',
+  9 => 'mpInfo',
+  10 => 'copy',
+  11 => 'setScreen',
+  12 => 'menu_app',
+  13 => 'menu_app_title',
+  14 => 'mid',
+  15 => 'app_by_api',
+  16 => 'data_by_api',
+  17 => 'report',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=rhaphp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `password` FROM `hd_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_menu` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/mp/index' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/mp/index' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0  AND `url` = 'mp/mp/index' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_mp` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `is_use` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_addons` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_addons` WHERE  `menu_show` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_mp_friends` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1610294400 AND 1610380800 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1610208000 AND 1610294400 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1610294400 AND 1610899200 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1609689600 AND 1610294400 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1609430400 AND 1612108800 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1606752000 AND 1609430400 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1609430400 AND 1640966400 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1  AND `subscribe_time` BETWEEN 1577808000 AND 1609430400 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1610294400 AND 1610380800 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1610208000 AND 1610294400 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1610294400 AND 1610899200 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1609689600 AND 1610294400 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1609430400 AND 1612108800 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1606752000 AND 1609430400 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1609430400 AND 1640966400 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0  AND `unsubscribe_time` BETWEEN 1577808000 AND 1609430400 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `hd_mp_friends` WHERE  `mpid` = 1  AND `subscribe` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2021-01-11T16:29:17+08:00] 127.0.0.1 GET test.rhaphp.com/mp/website/categorylist.html
+[运行时间：0.104006s] [吞吐率：9.61req/s] [内存消耗：896.19kb] [文件加载：103]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6; think_admin=think%3A%7B%22id%22%3A%221%22%2C%22admin_name%22%3A%22admin%22%2C%22password%22%3A%224e09a07b26fbbf6160deeacbb0bfbde5%22%2C%22status%22%3A%221%22%2C%22ip%22%3A%22127.0.0.1%22%2C%22last_time%22%3A%221610098480%22%2C%22rand_str%22%3A%22zcuMwC%22%2C%22admin_id%22%3A%221%22%2C%22groupid%22%3A%221%22%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/mp/mp/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/mp/website\category_list.html [ array (
+  0 => 'mpByMenu',
+  1 => 't_menu',
+  2 => 'topNode',
+  3 => 'menu_title',
+  4 => 'node',
+  5 => 'menu',
+  6 => 'controller_name',
+  7 => 'action_name',
+  8 => 'admin',
+  9 => 'mpInfo',
+  10 => 'copy',
+  11 => 'setScreen',
+  12 => 'menu_app',
+  13 => 'menu_app_title',
+  14 => 'mid',
+  15 => 'categoryList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;port=3306;dbname=rhaphp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `password` FROM `hd_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/website/categorylist' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/website/categorylist' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0  AND `url` = 'mp/mp/index' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_mp` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `is_use` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_addons` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_addons` WHERE  `menu_show` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_website_category` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_website_category` WHERE  `mpid` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2021-01-11T16:29:20+08:00] 127.0.0.1 GET test.rhaphp.com/mp/website/categoryconfig.html
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：760.53kb] [文件加载：101]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6; think_admin=think%3A%7B%22id%22%3A%221%22%2C%22admin_name%22%3A%22admin%22%2C%22password%22%3A%224e09a07b26fbbf6160deeacbb0bfbde5%22%2C%22status%22%3A%221%22%2C%22ip%22%3A%22127.0.0.1%22%2C%22last_time%22%3A%221610098480%22%2C%22rand_str%22%3A%22zcuMwC%22%2C%22admin_id%22%3A%221%22%2C%22groupid%22%3A%221%22%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/mp/website/categorylist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=rhaphp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_admin` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `password` FROM `hd_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_menu` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/website/categoryconfig' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/website/categoryconfig' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0  AND `url` = 'mp/mp/index' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_mp` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `is_use` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_addons` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_addons` WHERE  `menu_show` = 1  AND `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2021-01-11T16:29:21+08:00] 127.0.0.1 GET test.rhaphp.com/mp/website/categorylist.html
+[运行时间：0.049003s] [吞吐率：20.41req/s] [内存消耗：791.23kb] [文件加载：101]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jve9bc0b78dnbc64cgi204iuh6; think_admin=think%3A%7B%22id%22%3A%221%22%2C%22admin_name%22%3A%22admin%22%2C%22password%22%3A%224e09a07b26fbbf6160deeacbb0bfbde5%22%2C%22status%22%3A%221%22%2C%22ip%22%3A%22127.0.0.1%22%2C%22last_time%22%3A%221610098480%22%2C%22rand_str%22%3A%22zcuMwC%22%2C%22admin_id%22%3A%221%22%2C%22groupid%22%3A%221%22%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test.rhaphp.com/mp/mp/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\WWW\rhaphp\themes/pc/mp/website\category_list.html [ array (
+  0 => 'mpByMenu',
+  1 => 't_menu',
+  2 => 'topNode',
+  3 => 'menu_title',
+  4 => 'node',
+  5 => 'menu',
+  6 => 'controller_name',
+  7 => 'action_name',
+  8 => 'admin',
+  9 => 'mpInfo',
+  10 => 'copy',
+  11 => 'setScreen',
+  12 => 'menu_app',
+  13 => 'menu_app_title',
+  14 => 'mid',
+  15 => 'categoryList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=rhaphp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `password` FROM `hd_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_menu` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/website/categorylist' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `url` = 'mp/website/categorylist' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_menu` WHERE  `pid` = 0  AND `url` = 'mp/mp/index' ORDER BY `sort` ASC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_mp` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_mp` WHERE  `user_id` = 1  AND `is_use` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_addons` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_addons` WHERE  `menu_show` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_website_category` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `hd_website_category` WHERE  `mpid` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2021-01-11T16:32:05+08:00] 127.0.0.1 GET test.rhaphp.com/
+[运行时间：0.039003s] [吞吐率：25.64req/s] [内存消耗：598.74kb] [文件加载：89]
+[ info ] [ LANG ] F:\phpstudy\WWW\rhaphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__gads=ID=fccd2c01b2f0753b-228e851a88c5002b:T=1609725613:RT=1609725613:S=ALNI_MYsu7OhyegO_qvYXllCgzwm7ek8Zw; think_admin=think%3A%7B%22id%22%3A%221%22%2C%22admin_name%22%3A%22admin%22%2C%22password%22%3A%224e09a07b26fbbf6160deeacbb0bfbde5%22%2C%22status%22%3A%221%22%2C%22ip%22%3A%22127.0.0.1%22%2C%22last_time%22%3A%221609833091%22%2C%22rand_str%22%3A%22zcuMwC%22%2C%22admin_id%22%3A%221%22%7D; Hm_lvt_c3a330b88fce5e521bc5aaa2eda578c4=1609900439,1609988678,1610076702,1610077162; PHPSESSID=i9pnmvvuqs3qhr3hqfdhf55594',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3861.400 QQBrowser/10.7.4313.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test.rhaphp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;port=3306;dbname=rhaphp;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hd_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `password` FROM `hd_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: groupid[F:\phpstudy\WWW\rhaphp\application\admin\controller\Base.php:51]

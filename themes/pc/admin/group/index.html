@@ -1,0 +1,68 @@
+{extend name="../admin/common/base" /}
+{block name="nav_title"}
+<a href="{:url('add')}" class="layui-btn layui-btn-normal layui-btn-sm rha-nav-title">增加</a>
+{/block}
+{block name="body"}
+<form name="daoru_form" id="daoru_form" class="layui-form" style="padding: 0px 10px 0px 10px;" method="get" target="_blank">
+    <table class="layui-table" lay-skin="line">
+        <colgroup>
+            <col width="50">
+            <col width="120">
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+
+            <th>#</th>
+            <th>组名称</th>
+            <th>公众号数</th>
+            <th>小程序数</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="group_list" id="v"}
+        <tr>
+            <td>{$v.id}</td>
+
+            <td>{$v.name}</td>
+            <td>{$v.mpnum}</td>
+            <td>{$v.xcxnum}</td>
+            <td>{$v.status_name|raw}</td>
+            <td><a class="rha-bt-a" href="{:url('group/update',['id'=>$v.id])}">修改</a>
+                <?php
+                if($v['is_sys']==0){?>
+                | &nbsp;&nbsp;
+                <a  href="javascript:;" onclick="delCat('{$v.id}')" class="rha-bt-a" >删除</a>
+                <?php } ?>
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+</form>
+{$group_list->render()|raw}
+<script type="text/javascript">
+    function delCat(id) {
+        layui.use('layer', function(){
+            var layer = layui.layer;
+            layer.confirm('删除操作不可恢复，你确定需要删除吗？', {
+                btn: ['是','不'] //按钮
+            }, function(){
+                $.post("<?php echo url('group/del'); ?>",{'id':id},function (res) {
+                    if(res.status==1){
+                        layer.alert(res.msg,function (index) {
+                            window.location.reload();
+                            layer.close(index);
+                        })
+                    }else{
+                        layer.alert(res.msg)
+                    }
+                })
+            }, function(){
+            });
+        });
+    }
+</script>
+{/block}

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>{if isset($info.title)}{$info.title}{else /}留言板{/if}</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    {CSS href="__ADDONSTATIC__css/bui.css" /}
+    {CSS href="__ADDONSTATIC__css/style.css" /}
+    {:hook('Jssdk')}
+    <script>
+        wx.ready(function () {
+            var shareData = {
+                title: '{if isset($info.title)}{$info.title}{else /}留言板{/if}',
+                desc: '',
+                link: "{:getHostDomain()}{:addonUrl('index')}",
+                imgUrl: '{if isset($info.banner)}{$info.banner}{else /}__ADDONSTATIC__images/logo.png{/if}'
+            };
+            wx.onMenuShareAppMessage(shareData);
+            wx.onMenuShareTimeline(shareData);
+            wx.hideAllNonBaseMenuItem({
+                success: function () {
+                }
+            });
+            wx.showMenuItems({
+                menuList: [
+                    'menuItem:share:timeline', // 分享到朋友圈
+                    'menuItem:share:appMessage',
+                ]
+            });
+        });
+    </script>
+	{js href='__ADDONSTATIC__js/zepto.js' /}
+	{js href='__ADDONSTATIC__js/bui.js' /}
+</head>
+<body style="background: #f3f5f8;">
+	{block name="body"}{/block}
+</body>
+<script>
+    bui.ready(function() {
+        // 绑定事件
+        bind();
+        // 事件类定义
+        function bind() {
+            // 统一绑定页面所有的后退按钮
+            $(".btn-back").on("click", function(){
+                // 支持后退多层,支持回调
+                bui.back();
+            })
+        }
+    })
+</script>
+</html>

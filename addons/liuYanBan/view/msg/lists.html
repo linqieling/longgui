@@ -1,0 +1,155 @@
+{extend name="common:base" /}
+{block name="body"}
+<div class="bui-page">
+    <header class="bui-bar" {if isset($info.color) && $info.color}style="background: {$info.color}"{/if}>
+	    <div class="bui-bar-left">
+	        <div class="bui-btn btn-back"><i class="icon-back"></i></div>
+	    </div>
+        <div class="bui-bar-main">留言记录</div>
+        <div class="bui-bar-right">
+            <div class="bui-btn"></div>
+        </div>
+    </header>
+    <main>
+        <div id="scrollListview" class="bui-scroll">
+            <div class="bui-scroll-head"></div>
+            <div class="bui-scroll-main">
+                <ul class="bui-list">
+                </ul>
+            </div>
+            <div class="bui-scroll-foot"></div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</div>
+<style type="text/css">
+    .bui-list .span1 .item-text {
+        margin-bottom: .2rem;
+    }
+    .bui-list .span1 .item-text:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
+<script>
+
+    bui.ready(function() {
+
+		var pageview = {};
+
+	    var uiList = bui.list({
+	        id: "#scrollListview",
+	        url: "{:addonUrl('getList')}",
+	        children: ".bui-list",
+	        handle: "li",
+	        pageSize: 8,
+	        template: function(data) {
+	            var html = "";
+	            $.each(data, function(index, el) {
+	                // status=1 手动拼接侧滑菜单,这样可以避免再次dom操作
+	                // 设置高度可以少遍历一次
+	                var status = '';
+	                if(el.status){
+	                    var status = '<i class="bui-badges">已回复</i>';
+	                }
+	                html += `<li status="1" class="bui-btn bui-box" data-id="${el.mb_id}">
+                        <div class="span1">
+                            <h3 class="item-title">${el.title}</h3>
+                            <p class="item-text">${dateFormat(el.dateline)}</p>
+                        </div>
+                        ${status}
+                        <i class="icon-listright"></i>
+                    </li>`;
+	            });
+	            return html;
+	        },
+	        //如果分页的字段名不一样,通过field重新定义
+	        field: {
+	            page: "page",
+	            size: "limit",
+	            data: "data"
+	        },
+	        onRefresh: function(scroll) {
+	            // 下拉刷新
+	            // 初始化listview
+	            // uiListviewInit();
+	            //console.log(this.option("page"));
+	        },
+	        onLoad: function(scroll) {
+	            // 滚动加载
+	            //console.log(this.option("page"));
+	            //初始化listview
+	        },
+	        callback: function(e) {
+	            // 找到整行li
+	            var $line = $(e.target).closest("li")
+	            //console.log($line[0].dataset.id)
+	            bui.load({ url: "{:addonUrl('detail')}", param: {
+	                id: $line[0].dataset.id
+	            }});
+	        }
+	    });
+
+	    /* 时间戳转化开始 */
+	    Date.prototype.format = function (fmt) {
+	       var o = {
+	        "M+": this.getMonth() + 1,//月份
+	        "d+": this.getDate(),//日
+	        "h+": this.getHours(),//小时
+	        "m+": this.getMinutes(),//分
+	        "s+": this.getSeconds(),//秒
+	        "q+": Math.floor((this.getMonth() + 3) / 3),//q是季度
+	        "S": this.getMilliseconds() //毫秒
+	       };
+	       if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1,(this.getFullYear() + "").substr(4 - RegExp.$1.length));
+	       for (var k in o)
+	        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1,(RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+	       return fmt;
+	      } 
+	     
+	      String.prototype.format = function (args) {
+	       var result = this;
+	       if (arguments.length > 0) {
+	        if (arguments.length == 1 && typeof (args) == "loginTime") {
+	         for (var key in args) {
+	          if (args[key] != undefined) {
+	           var reg = new RegExp("({" + key + "})","g");
+	           result = result.replace(reg,args[key]);
+	          }
+	         }
+	        }
+	        else {
+	         for (var i = 0; i < arguments.length; i++) {
+	          if (arguments[i] != undefined) {
+	           //var reg = new RegExp("({[" + i + "]})","g");//这个在索引大于9时会有问题
+	           var reg = new RegExp("({)" + i + "(})",arguments[i]);
+	          }
+	         }
+	        }
+	       }
+	       return result;
+	    }
+	    function dateFormat(value) {
+	       return value ? new Date(value*1000).format("yyyy-MM-dd hh:mm") : "";
+	    } 
+
+
+	    pageview.bind = function() {
+
+	    }
+
+	    pageview.init = function() {
+
+	        // 绑定事件
+	        this.bind();
+	    }
+
+	    pageview.init();
+
+	})
+
+</script>
+
+{/block}

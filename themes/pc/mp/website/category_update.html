@@ -1,0 +1,73 @@
+{extend name="../admin/common/base" /}
+{block name="body"}
+<form class="layui-form" action="" style="padding-right: 10px;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">栏目名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="name" required  lay-verify="required" value="{$category.name}" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">排序</label>
+        <div class="layui-input-inline">
+            <input name="sort" value="{$category.sort}"  placeholder="请输入排序" autocomplete="off" class="layui-input" type="text">
+        </div>
+        <div class="layui-form-mid layui-word-aux">数字越小越靠前</div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">图标</label>
+        {if $category.icon}
+        <div class="layui-input-block">
+            {:hook('Upload',[
+                'type'=>'image',
+                'name'=>'icon',
+                'value'=> $category.icon
+            ])}
+        </div>
+        {else/}
+        <div class="layui-input-block">
+            {:hook('Upload',[
+                'type'=>'image',
+                'name'=>'icon'
+            ])}
+        </div>
+        {/if}
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">首页展示</label>
+        <div class="layui-input-block">
+          <input type="checkbox" name="show" lay-skin="switch" lay-text="显示|隐藏" value="1" {if $category.show}checked{/if}>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="ADM">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+
+<script>
+
+    layui.use('form', function(){
+        var form = layui.form;
+        form.on('submit(ADM)', function(data){
+            $.post('',data.field,function (res) {
+                if(res.status=='0'){
+                    layer.msg(res.msg);
+                }
+                if(res.status=='1'){
+                    layer.msg(res.msg,{time:1000},function () {
+                        location.href="{:url('Website/categorylist')}";
+                    });
+                }
+            })
+            return false;
+        });
+    });
+</script>
+{/block}
